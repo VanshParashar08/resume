@@ -4,42 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vansh Parashar - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 20px;
-      background: #f2f4f8;
-      color: #2c3e50;
+      padding: 0;
+      background-color: #f2f7fb;
+      color: #333;
     }
 
     .container {
       max-width: 900px;
-      margin: auto;
+      margin: 40px auto;
       background: #fff;
       padding: 40px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
     h1, h2 {
+      color: #1e2a38;
       margin-bottom: 10px;
-      color: #1a1a1a;
+    }
+
+    h1 {
+      font-size: 36px;
     }
 
     h2 {
-      border-bottom: 2px solid #007acc;
+      font-size: 22px;
+      border-bottom: 2px solid #4fa3ff;
       padding-bottom: 5px;
       margin-top: 40px;
     }
 
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    p, li {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
     }
 
     .header {
@@ -47,50 +50,63 @@
       margin-bottom: 30px;
     }
 
-    .header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
     .contact a {
       display: inline-block;
-      margin: 5px 10px;
+      margin: 5px 12px;
       font-size: 14px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .project {
+      background: #f9fcff;
+      border-left: 5px solid #4fa3ff;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .date {
+      float: right;
+      font-style: italic;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .tag {
+      background-color: #e6f2ff;
+      color: #005f99;
+      font-size: 13px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin: 2px 4px 2px 0;
+      display: inline-block;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    li {
-      margin-bottom: 6px;
-    }
-
-    .section p {
-      margin: 10px 0;
-    }
-
-    .project-title {
-      font-weight: bold;
-      display: block;
-      margin-top: 10px;
-    }
-
-    .date {
-      float: right;
-      font-style: italic;
-      color: #666;
-    }
-
-    .clear {
-      clear: both;
-    }
-
     @media (max-width: 600px) {
       .date {
         float: none;
         display: block;
-        margin-top: 4px;
+        margin-top: 5px;
       }
     }
   </style>
@@ -102,8 +118,8 @@
     <div class="header">
       <h1>Vansh Parashar</h1>
       <div class="contact">
-        <a href="mailto:vanshparashar0812@gmail.com">vanshparashar0812@gmail.com</a> |
-        <a href="tel:+917417429747">+91-7417429747</a> |
+        <a href="mailto:vanshparashar0812@gmail.com">vanshparashar0812@gmail.com</a>
+        <a href="tel:+917417429747">+91-7417429747</a>
         <a href="https://linkedin.com/in/vansh-parashar-2ba11027a" target="_blank">LinkedIn</a>
       </div>
     </div>
@@ -126,26 +142,44 @@
     <div class="section">
       <h2>Work Experience / Projects</h2>
 
-      <p>
-        <span class="project-title">1. SupplyLink – AI-Powered Inventory Management Portal</span>
-        <span class="date">May 2025 – Jul 2025</span><br class="clear"/>
-        React.js | Node.js | MongoDB | OpenAI GPT | Dialogflow<br>
-        Built a full-stack portal for SMEs to manage inventory, automate reorder predictions, and interact with suppliers via AI chatbot. Enabled real-time tracking, role-based dashboards, and predictive analytics.
-      </p>
+      <div class="project">
+        <span class="project-title">SupplyLink – AI-Powered Inventory Management Portal</span>
+        <span class="date">May 2025 – Jul 2025</span>
+        <div class="clear"></div>
+        <div>
+          <span class="tag">React.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">OpenAI GPT</span>
+          <span class="tag">Dialogflow</span>
+        </div>
+        <p>
+          Built a full-stack portal for SMEs to manage inventory, automate reorder predictions, and interact with suppliers via AI chatbot. Enabled real-time tracking, role-based dashboards, and predictive analytics.
+        </p>
+      </div>
 
-      <p>
-        <span class="project-title">2. Founder’s Intern – Sarvh</span>
-        <span class="date">June 2025 – Present</span><br class="clear"/>
-        Fashion Tech Startup<br>
-        Assisted with product uploads, content management, and website coordination. Collaborated with the design and marketing teams to ensure seamless product launches.
-      </p>
+      <div class="project">
+        <span class="project-title">Founder’s Intern – Sarvh</span>
+        <span class="date">June 2025 – Present</span>
+        <div class="clear"></div>
+        <span class="tag">Content</span>
+        <span class="tag">Coordination</span>
+        <p>
+          Assisted with product uploads, content management, and website coordination. Collaborated with the design and marketing teams to ensure seamless product launches.
+        </p>
+      </div>
 
-      <p>
-        <span class="project-title">3. Founder – Wizar (Travel Startup)</span>
-        <span class="date">2024</span><br class="clear"/>
-        Built a student-centric travel planning startup. Gained hands-on experience in ideation, user research, MVP development, and business pivots. Learned to navigate startup challenges.
-      </p>
-
+      <div class="project">
+        <span class="project-title">Founder – Wizar (Travel Startup)</span>
+        <span class="date">2024</span>
+        <div class="clear"></div>
+        <span class="tag">Startup</span>
+        <span class="tag">UX Research</span>
+        <span class="tag">MVP</span>
+        <p>
+          Built a student-centric travel planning startup. Gained hands-on experience in ideation, user research, MVP development, and business pivots. Learned to navigate startup challenges.
+        </p>
+      </div>
     </div>
 
     <div class="section">
